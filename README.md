@@ -83,5 +83,5 @@ Our experiments used full‑precision`fp32`. If your hardware supports it, you m
 
 ### Evaluation
 
-We provide built‑in evaluation routines to measure the model’s classification accuracy on our selected data. To assess overall new‑word discovery performance and coverage against our term lists, run `eval.py` under `/scripts`.
+We provide built‑in evaluation routines to measure the model’s classification accuracy on our selected data. To assess overall new‑word discovery performance and coverage against our term lists, run `scripts/eval.py`.
 
