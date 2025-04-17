@@ -4,7 +4,7 @@ This repository contains the code for **Enhancing Governmental New Word Discover
 
 ## Corpus
 
-We begin with the [PolicyBank](https://pan.baidu.com/s/1ca9kpHGxmgeo1mB1qr3cCA) as our raw corpus, and supplement it with additional government‑related texts scraped from various public websites. After preprocessing, we obtain the **GovTerm**  dataset—an instruction‑tuning collection for large models to improve their knowledge of governmental terminology and their ability to extract new terms. We also provide **GovDict **— a glossary of government terms with partial explanations and a plain list of government terms without explanations.
+We begin with the [PolicyBank](https://pan.baidu.com/s/1ca9kpHGxmgeo1mB1qr3cCA) as our raw corpus, and supplement it with additional government‑related texts scraped from various public websites. After preprocessing, we obtain the **GovTerm**  dataset—an instruction‑tuning collection for large models to improve their knowledge of governmental terminology and their ability to extract new terms. We also provide **GovDict**— a glossary of government terms with partial explanations and a plain list of government terms without explanations.
 
 ## Usage
 
@@ -43,7 +43,7 @@ You can unzip your documents by year/month into the `data` directory, following 
 
 ### Training
 
-After preparing your model files and datasets, run`train.py` under `/scripts` to start training the Lora model.The configurations used in our experiments were:
+After preparing your model files and datasets, run`scripts/train.py` to start training the Lora model.The configurations used in our experiments were:
 
 #### Qwen
 
@@ -79,7 +79,7 @@ lora_config = LoraConfig(
 )
 ```
 
-Our experiments used full‑precision (`fp32`). If your hardware supports it, you may switch to `bf16` to significantly speed up training with minimal impact on accuracy.
+Our experiments used full‑precision`fp32`. If your hardware supports it, you may switch to `bf16` to significantly speed up training with minimal impact on accuracy.
 
 ### Evaluation
 
